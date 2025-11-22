@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IssamTech</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#0f0f0f; color:white; }
+    header { text-align:center; padding:40px 20px; }
+    header h1 { font-size:48px; margin:0; color:#4dd0ff; }
+    header p { font-size:18px; opacity:0.8; }
+    nav { display:flex; justify-content:center; gap:20px; margin-top:20px; }
+    nav button { background:#1e1e1e; border:1px solid #555; padding:12px 24px; color:white; cursor:pointer; border-radius:8px; }
+    section { display:none; padding:30px; max-width:900px; margin:auto; }
+    h2 { color:#4dd0ff; }
+    .card { background:#1a1a1a; padding:20px; border-radius:10px; margin:15px 0; border:1px solid #333; display:flex; gap:20px; align-items:center; }
+    .card img { width:60px; height:60px; border-radius:8px; }
+    .contact-box { background:#1a1a1a; padding:20px; border-radius:10px; border:1px solid #333; }
+  </style>
+</head>
+<body><header>
+  <h1>IssamTech</h1>
+  <p>Professional Computer Services – Software & Hardware</p>
+  <nav>
+    <button onclick="showSection('services')">Services</button>
+    <button onclick="showSection('contact')">Contact Us</button>
+  </nav>
+</header><!-- SERVICES SECTION --><section id="services">
+  <h2>Services</h2>
+  <nav>
+    <button onclick="showSub('software')">Software</button>
+    <button onclick="showSub('hardware')">Hardware</button>
+  </nav>  <!-- SOFTWARE -->  <div id="software" style="display:none; margin-top:20px;">
+    <h3>Software Services</h3><div class="card">
+  <img src="https://via.placeholder.com/60" />
+  <div>
+    <strong>Windows Installation</strong><br> Price: $25
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/60" />
+  <div>
+    <strong>Drivers + Microsoft Office Setup</strong><br> Price: $30
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/60" />
+  <div>
+    <strong>Engineering Software (AutoCAD, SolidWorks...)</strong><br> Price: $40–$50
+  </div>
+</div>
+
+  </div>  <!-- HARDWARE -->  <div id="hardware" style="display:none; margin-top:20px;">
+    <h3>Hardware Services</h3><div class="card">
+  <img src="https://via.placeholder.com/60" />
+  <div>
+    <strong>Full PC Build</strong><br> Price: $50
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/60" />
+  <div>
+    <strong>Hardware Diagnostics</strong><br> Price: $20
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/60" />
+  <div>
+    <strong>Cleaning + Thermal Paste Replacement</strong><br> Price: $15
+  </div>
+</div>
+
+  </div>
+</section><!-- CONTACT SECTION --><section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Phone:</strong> +961 78 963 227</p>
+    <p><strong>Email:</strong> majanni.issam@gmail.com</p>
+    <p><strong>Instagram:</strong> is99._.mi</p>
+  </div>
+</section><script>
+  function showSection(id){
+    document.querySelectorAll('section').forEach(s=>s.style.display='none');
+    document.getElementById(id).style.display='block';
+  }
+  function showSub(id){
+    document.querySelectorAll('#services > div').forEach(d=>d.style.display='none');
+    document.getElementById(id).style.display='block';
+  }
+</script></body>
+</html>
