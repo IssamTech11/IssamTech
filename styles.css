@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+  margin:0; font-family: 'Poppins', sans-serif;
+  background:#0f0f0f; color:white;
+}
+.container { max-width:1000px; margin:auto; padding:20px; }
+header { text-align:center; padding:50px 20px; }
+header h1 { font-size:48px; color:#4dd0ff; margin:0; }
+header p { font-size:18px; opacity:0.8; margin:10px 0 30px 0; }
+nav button {
+  background:#1e1e1e; border:1px solid #555; color:white;
+  padding:12px 25px; border-radius:8px; cursor:pointer;
+  margin:5px; transition:0.3s;
+}
+nav button:hover { background:#4dd0ff; color:#0f0f0f; }
+
+.subnav { text-align:center; margin:20px 0; }
+.subnav button { margin:5px; }
+
+.cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px; }
+.card {
+  background:#1a1a1a; border-radius:10px; padding:20px;
+  width:250px; display:flex; align-items:center; gap:15px;
+  border:1px solid #333; transition:0.3s;
+}
+.card:hover { transform:translateY(-5px); box-shadow:0 0 15px #4dd0ff; }
+
+.card i { color:#4dd0ff; }
+.card h3 { margin:0 0 5px 0; font-size:18px; }
+.card p { margin:0; opacity:0.8; }
+
+.contact-box { background:#1a1a1a; padding:20px; border-radius:10px; border:1px solid #333; max-width:400px; margin:auto; text-align:center; }
+.contact-box p { margin:10px 0; font-size:16px; }
+.contact-box i { margin-right:8px; color:#4dd0ff; }
+
+section { display:none; padding:30px 0; }
+section h2 { text-align:center; color:#4dd0ff; font-size:32px; margin-bottom:20px; }
+
+@media(max-width:600px){
+  .cards { flex-direction:column; align-items:center; }
+  .card { width:90%; }
+}
